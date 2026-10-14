@@ -46,9 +46,22 @@ body {
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   scroll-padding-inline: 0.2rem;
-  scrollbar-color: rgb(255 255 255 / 45%) rgb(255 255 255 / 10%);
-  scrollbar-width: thin;
+  scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+}
+
+.vehicle-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.vehicle-grid {
+  cursor: grab;
+}
+
+.vehicle-grid.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
 }
 
 @media (min-width: 600px) {
