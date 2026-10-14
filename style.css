@@ -136,7 +136,7 @@ body {
 .certified-content {
   width: 92%;
   margin-inline: auto;
-  padding-block: 2rem;
+  padding-block: 3.75rem 2rem;
   text-align: center;
 }
 
